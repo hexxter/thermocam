@@ -1,9 +1,8 @@
 import sys
 from time import sleep
 import RPi.GPIO as GPIO
-
+		
 GPIO.setmode(GPIO.BCM)
-
 
 class stepper():
 

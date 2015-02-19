@@ -45,7 +45,7 @@ class thermo_layser(threading.Thread):
 			self.target_temp = float(data[1])
 			self.enviroment_temp = float(data[2])
 			self.new_data = True
-		except ValueError as e:
+		except (ValueError, IndexError) as e:
 			self.new_data = False
 			print( e )
 			

@@ -33,7 +33,7 @@ class stepper():
 	def _overrun(self):
 		if(self.laststep >= 8): self.laststep = 0
 		if(self.laststep < 0): self.laststep = 7
-		print( self.laststep )
+		#print( self.laststep )
 
 	def next_step(self):
 		
